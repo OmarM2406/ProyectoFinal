@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const usuarioRoutes = require("../traveling/backend/routes/Usuarios");
+const usuarioRoutes = require("../traveling/backend/routes/Usuarios.js");
 const dotenv = require("dotenv");
 const path = require("path");
 const app = express();
