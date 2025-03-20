@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Actividades y lugares turísticos en Cali" >
+        <meta name="keywords" content ="Sitios turísticos en Cali, Tours de atividades y eventos en Cali">
+        <title>Viaja y Conoce Cali</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagenes/logo.png" href="imagenes/favicon.png">
+    </head>
+<header class="header">
+    <div class="header-top">
+        <h1>TRAVELING</h1>
+        <img src="imagenes/logo.png" alt="LOGO" class="logo">
+    </div>
+
+    <nav class="main-nav" aria-label="Menú principal">
+        <div class="nav-options">
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" name="idioma">
+                <option value="#">Elige un idioma</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+
+            <label for="moneda">Moneda:</label>
+            <select id="moneda">
+                <option value="#">Elige una moneda</option>
+                <option value="USD">Dólar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="COP">Peso Colombiano (COP)</option>
+            </select>
+
+            <input type="text" id="buscar" placeholder="Escribe algo...">
+            <button onclick="buscarTexto()">Buscar</button>
+
+            <div class="boton-inicio">
+                <a href="inicio-de-sesion.html" class="btn">Iniciar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="secondary-nav" aria-label="Navegación secundaria">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    
+<section1>
+ <h1 class="h1">Lugares que te sorprenderán...</h1>
+
+<h2 class="h3">Delicias para todos los paladares</h2><h3>Te animas a explorar lo desconocido</h3>
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <div class="actividades">
+        <img src="imagenes/cantina15.jpg" id="lugar" alt="Restaurante Cantina la 15">
+        <h4>Cantina la 15</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Paga consumo</p>
+        <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/Monterubbiano.jpg" id="lugar" alt="Restaurante Monterubbiano">
+        <h4>Monterubbiano</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Consumo</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/boheme.jpg" id="lugar" alt="Restaurante La boheme">
+        <h4>La boheme</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Consumo</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/peñon.jpg" id="lugar" alt="Restaurante El Peñon de San Antonio">
+        <h4>El Peñon de San Antonio</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Consumo</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+        <div class="actividades">
+        <img src="imagenes/borondo.jpg" id="lugar" alt="Restaurante Borondo">
+        <h4>Borondo, vía Cristo Rey</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Ingreso y Consumo</p>
+        <button class="btn-1">Reserva</button>
+        </div>  
+        <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<section2 class ="noche">
+    <h2 >Cuando el sol se oculta, la fiesta comienza</h2> <h3>¡La noche caleña te espera!</h3>
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <div class="actividades">
+        <img src="imagenes/pergola.jpg" id="lugar" alt="La Pérgola Clándestina">
+        <h4>La Pérgola Clándestina</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/urbano.jpg" id="lugar" alt="Urbano bar restaurante">
+        <h4>Urbano bar restaurante</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/zaperoco.jpg" id="lugar" alt="Zaperoco bar">
+        <h4>Zaperoco bar</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/bare.jpg" id="lugar" alt="Punto Baré">
+        <h4>Punto Baré Disco bar</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/social.jpg" id="lugar" alt="La social ">
+        <h4>La social </h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+</div>
+<br>
+</section2>
+<br>
+<section3>  <h2>Donde la pasión y la adrenalina se encuentran.</h2> <h3>Conoce los templos del deporte en Cali.</h3>
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <div class="actividades">
+        <img src="imagenes/estadio.jpg" id="lugar" alt="Estadio Olímpico Pascual Guerrero">
+        <h4>Estadio Olímpico Pascual Guerrero</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/coliseo2.jpg" id="lugar" alt="Coliseo El Pueblo">
+        <h4>Coliseo El Pueblo</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/Velodromo.jpg" id="lugar" alt="Velódromo Alcides Nieto Patiño">
+        <h4>Velódromo Alcides Nieto Patiño</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/panamericanas.jpg" id="lugar" alt="Unidad Deportiva Panaméricana Jaime Aparicio">
+        <h4>Unidad Deportiva Panaméricana Jaime Aparicio </h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/patinodromo.jpg" id="lugar" alt="Patinódromo Luz Mery Tristan">
+        <h4>Patinódromo Luz Mery Tristan</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+</div>
+</section3>
+<br>
+<br>
+<section4>  <h2>Descanso, lujo y comodidad.</h2> <h3>¡tu estadia perfecta está aquí!</h3>
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <div class="actividades">
+        <img src="imagenes/spiwak.jpg" id="lugar" alt="Hotel Spiwak">
+        <h4>Hotel Spiwak, Chipichape</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/inter.jpg" id="lugar" alt="Hotel Intercontinental">
+        <h4>Hotel Intercontinental</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/carlton.jpg" id="lugar" alt="Hotel Dann Carlton">
+        <h4>Hotel Dann Carlton</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis, pagando con guía</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/luxury.jpg" id="lugar" alt="Hotel Luxury">
+        <h4>Hotel Luxury</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/sonesta.jpg" id="lugar" alt="Hotel Sonesta">
+        <h4>Hotel Sonesta</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pagando</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+<br>
+</div>
+<br>
+<br>
+</section4>
+<br>
+<br>
+<section5 class="noche">  
+<h2>Compras, entretenimiento y experiencias múltiples en un solo lugar.</h2><h3>¿Qué esperas?</h3> 
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <div class="actividades">
+        <img src="imagenes/chipichape.jpg" id="lugar" alt="Centro Comercial Chipichape">
+        <h4>Chipichape</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis</p>
+        <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/jardinplaza.jpg" id="lugar" alt="Centro Comercial Jardín Plaza">
+        <h4>Jardín Plaza</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/unicentro.jpeg" id="lugar" alt="Centro Comercial Unicentro">
+        <h4>Unicentro</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/laestacion.jpg" id="lugar" alt="Centro Comercial La Estación">
+        <h4>La Estación</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/mallplaza.jpg" id="lugar" alt="Centro Comercial Mall Plaza">
+        <h4>Mall Plaza</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+</div>
+</section5>
+<br>
+<section6>  <h2>La suerte está de tu lado... </h2><h3>¡Ven y apuesta a la diversión!</h3>
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <div class="actividades">
+        <img src="imagenes/aladin.jpg" id="lugar" alt="Casino Aladino">
+        <h4>Casino Aladino</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Paago mínimo</p>
+        <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/crown.jpeg" id="lugar" alt="Casino The Crown">
+        <h4>The Crown</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pago mínimo</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/hollywood.webp" id="lugar" alt="Casino Hollywood">
+        <h4>Hollywood</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Gratis</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/marcopolo.jpg" id="lugar" alt="Casino Marco Polo">
+        <h4>Marco Polo</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pago mínimo</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+        <img src="imagenes/riocasino.jpg" id="lugar" alt="Casino Río">
+        <h4>Río Casino</h4>
+        <p>⭐⭐⭐⭐⭐ Excelente</p>
+        <p>Pago mínimo</p>
+        <button class="btn-1">Reserva</button>
+    </div>
+</div>
+</section6>
+<br>
+<section7>
+<h2>"Tu brújula de aventuras…</h2> <h3>¡Encuentra los mejores lugares aquí!</h3>
+<div class="mapaPublicidad">
+   <div class="mapaP"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107085.04085435759!2d-76.57221441496922!3d3.415762181588949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0cc4bb3f1%3A0x1f0fb5e952ae6168!2sCali%2C%20Valle%20del%20Cauca!5e1!3m2!1ses!2sco!4v1740071474217!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="publicidad1">
+        <a href="https://www.ejemplo.com" target="_blank">
+        <img class="publiVertical" src="imagenes/pauta1.jpeg" alt="Pauta aquí">
+        <img class="publiVertical" src="imagenes/pauta3.jpeg" alt="Hamburguesas"><!-- pauta aquí-->
+        <img class="publiVertical" src="imagenes/pauta2.jpg" alt="Pauta aquí">
+        </a>
+    </div>
+</div>
+<br>
+</section7>
+<section8 class="noche">  
+<h2>¡Tu próxima gran aventura está cerca!</h2> <h3>Anímate, no te arrepentirás...</h3>
+<div class = "contenedor-actividades" id="contenedor-actividades" >
+    <br>
+    <br>
+    <div class="actividades">
+            <img src="imagenes/milagroso.jpg" id="lugar" alt="Básilica del Señor de los Milagros, Buga">
+            <h4>Básilica del Señor de los Milagros, Buga</h4>
+            <p>⭐⭐⭐⭐⭐ Excelente</p>
+            <p>Gratis</p>
+            <button class="btn-1"> Reserva</button>
+    </div>
+    <div class="actividades">
+            <img src="imagenes/racamandapa.jpg" id="lugar" alt="Racamandapa">
+            <h4>Racamandapa</h4>
+            <p>⭐⭐⭐⭐⭐ Excelente</p>
+            <p>Pagando</p>
+            <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+            <img src="imagenes/t-caleñas.jpg" id="lugar" alt="Tardes Caleñas, Rozo">
+            <h4>Tardes Caleñas, Rozo</h4>
+            <p>⭐⭐⭐⭐⭐ Excelente</p>
+            <p>Pagando</p>
+            <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+            <img src="imagenes/nirvana.jpg" id="lugar" alt="Reserva de Nirvana, Palmira">
+            <h4>Reserva de Nirvana, Palmira</h4>
+            <p>⭐⭐⭐⭐⭐ Excelente</p>
+            <p>Pago mínimo</p>
+            <button class="btn-1">Reserva</button>
+    </div>
+    <div class="actividades">
+            <img src="imagenes/calima.jpg" id="lugar" alt="Lago Calima, Darien">
+            <h4>Lago Calima, Darien</h4>
+            <p>⭐⭐⭐⭐⭐ Excelente</p>
+            <p>Gratis, pagando</p>
+            <button class="btn-1">Reserva</button>
+    </div>
+</div>
+</section8>
+<br>
+<section9>
+<h2>RESEÑAS</h2>
+<br>
+<br>
+<div class="reseña-contenedor">
+  <img src="imagenes/perfilsinFoto.webp" alt="Foto de perfil" class="profile-img">
+  <input type="text" class="input-field" placeholder="Nombre del usuario">
+  <input type="text" class="input-field" placeholder="A quién calificas?">
+
+<div class="estrellas">
+  <span class="star" data-value="1">★</span>
+  <span class="star" data-value="2">★</span>
+  <span class="star" data-value="3">★</span>
+  <span class="star" data-value="4">★</span>
+  <span class="star" data-value="5">★</span>
+</div>
+
+<textarea class="input-field" rows="4" placeholder="Escribe tu reseña aquí..."></textarea>
+  <button class="submit-btn">Enviar Reseña</button>
+
+</div> 
+<caja1 class="caja">
+  <img src="imagenes/chavo.jpeg" class="perfil" >
+  <div>
+   <h4> Chavo del 8</h4>  
+  </div>
+  <div>
+  <h4>Cantina la 15, Granada.</h2>
+  </div>
+  <div>
+  <p>⭐⭐⭐⭐⭐ Excelente</p>
+  </div>
+  <div>
+  <p>Me encantó mucho todo, la comida y la atención.Desde la entrada del parqueadero recibes la bienvenida, mejor dicho me fui feliz! muchas gracias por la recomendación. Estaré de nuevo por acá siguiendo las sugerencias de Traveling.</p>
+   </div>
+</caja1> 
+  <caja2 class="caja">  
+<img src="imagenes/dña Florinda.png" class="perfil" >
+  <div>
+   <!-- <h3>nombre de quien escribe la reseña </h3>  --> 
+   <h4> Doña Florinda</h4>  
+  </div>
+  <div>
+  <h4>Zoologico de Cali.</h4>
+  </div>
+  <div>
+  <p>⭐⭐⭐ Aceptable</p>
+  </div>
+  <div>
+  <p>El lugar es bonito y agradable, pero algunos animales no tienen espacio suficiente para su movilidad. La vegetación está bien cuidada, lo triste es el cautiverio de animales en un sitio muy limitado para ellos. Algunos reptiles en un metro cuadrado y las nutrias en un pozo de 2 metros de largo aproximadamente. Los demás igual.</p>
+   </div>
+  </caja2>        
+  <caja3 class="caja">
+  <img src="imagenes/kiko.jpeg" class="perfil" >
+  <div>
+   <!-- <h3>nombre de quien escribe la reseña </h3>  --> 
+   <h4> Kiko</h4>  
+  </div>
+  <div>
+  <h4>Tour turístico del oeste.</h4>
+  </div>
+  <div>
+  <p>⭐⭐⭐⭐⭐ Excelente</p>
+  </div>
+  <div>
+  <p>Hemoso! Recorrimos varios lugares (Museo la Tertulia, La Ermita, Bulevard, Cristo Rey) en una tarde y la experiencia fue maravillosa.</p>
+</div>
+  </caja3>        
+  <caja4 class="caja">
+     <img src="imagenes/chilindrina.png" class="perfil" >
+  <div>
+   <!-- <h3>nombre de quien escribe la reseña </h3>  --> 
+   <h4> Chilindrina</h4>  
+  </div>
+  <div>
+  <h4>Km 18, Saladito.</h4>
+  </div>
+  <div>
+  <p>⭐⭐⭐ Aceptable</p>
+  </div>
+  <div>
+  <p>Buenos restaurantes y un clima agradablemente fresco, apenas para variar del calor de la ciudad. Pero, no hay gran cosa por hacer.</p>
+   </div>
+  </caja4>        
+  <caja5 class="caja">      
+<img src="imagenes/ñoño.jpg" class="perfil" >
+   <!-- <h3>nombre de quien escribe la reseña </h3>  --> 
+   <h4> Ñoño</h4>  
+  <div>
+  <h4>Tour cascadas de pance.</h4>
+  </div>
+  <div>
+  <p>⭐⭐⭐⭐⭐ Excelente</p>
+  </div>
+  <div>
+  <p>Son lugares mágicos. La exhuberante belleza natural nos dejó impactados. Hay rutas para diferentes niveles de senderismo y en todas hay cascadas espectaculares.</p>
+   </div>
+  </caja5> 
+  <caja6 class="caja">
+<img src="imagenes/ramon.jpg"  class="perfil" >
+      <div>
+       <!-- <h3>nombre de quien escribe la reseña </h3>  --> 
+       <h4> Ramon Baldes</h4>  
+      </div>
+      <div>
+      <h4>Casino Royal, Chipichape.</h4>
+      </div>
+      <div>
+      <p>⭐⭐⭐⭐ Bueno</p>
+      </div>
+      <div>
+      <p>El lugar es muy bonito y limpio, hay buena atención y siempre hay musica agradable. Sin embargo, no tienen tanta variedad de juegos que sí se encuentran en otros casinos internacionales.</p>
+       </div>
+      </caja6>
+</section9>
+
+<script src="script.js"></script>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+                    <li><a href="vinculate.html">Vincula tu empresa o tus actividades aquí</a></li>
+                    <li><a href="pauta-aqui.html">Pauta aquí</a></li>
+                </ul>
+            </div>
+    
+            <div class="legal">
+                <a href="privacidad.html">Declaración de privacidad</a>
+                <a href="datos.html">Política de datos</a>
+            </div>
+    
+            <div class="copy">
+                <p>Equipo desarrollador Traveling 2025 @Todos los derechos reservados.</p>
+            </div>
+        </div>
+        </footer>
+</body>
+
+
+</html>
