@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Traveling</title>
+    <link rel="stylesheet" href="/assets/CSS/registro.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <img src="/assets/images/logo.png" alt="LOGO de Traveling" class="logo">
+            <h1>TRAVELING</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <form id="form-user">
+            <legend>Datos personales</legend>
+
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+            <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
+            <input type="text" id="usuario" name="usuario" required placeholder="Crea tu usuario">
+            <input type="password" id="password" name="password" required placeholder="Crea tu contraseña">
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <div class="button-container">
+        <button onclick="window.location.href='/pages/index.html'" class="btn-inicio">Inicio</button>
+        <button onclick="window.location.href='/pages/inicio-de-sesion.html'" class="btn-atras">Atrás</button>
+    </div>
+    <script src="/assets/js/registro.js" defer></script>
+    <footer>
+        <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="/footer/page/nosotros.html">¿Quiénes somos?</a></li>
+                    <li><a href="/footer/page/vinculate.html">Vincula tu empresa o tus actividades aquí</a></li>
+                    <li><a href="/footer/page/pauta.html">Pauta aquí</a></li>
+                    <li><a href="/footer/page/declaración-privacidad.html">Declaración de privacidad</a></li>
+                    <li><a href="/footer/page/politica-de-datos.html">Política de datos</a></li>
+                </ul>
+            </nav>
+            <p>Equipo desarrollador Traveling 2025 © Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html

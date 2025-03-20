@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 14px;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #333; /* Color de texto */
+}
+
+.privacidad {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para el contenido */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacidad h1 {
+    color: #007bff; /* Color azul para el título principal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.privacidad h2 {
+    color: #0056b3; /* Color azul oscuro para los subtítulos */
+    margin-top: 20px;
+}
+
+.privacidad h3 {
+    color: #003366; /* Color azul más oscuro para los sub-subtítulos */
+    margin-top: 15px;
+}
+
+.privacidad p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a, .legal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover, .legal a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+.copy p {
+    margin: 10px 0 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio adicional arriba de los botones */
+}
+
+.btn-inicio, .btn-atras {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-inicio:hover, .btn-atras:hover {
+    background-color: #0056b3;
+}

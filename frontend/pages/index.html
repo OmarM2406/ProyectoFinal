@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Actividades y lugares turísticos en Cali">
+    <meta name="keywords" content="Sitios turísticos en Cali, Tours de atividades y eventos en Cali">
+    <title>Viaja y Conoce Cali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="icon" type="imagenes/logo.png" href="imagenes/favicon.png"> -->
+</head>
+<header class="header">
+    <div class="header-top">
+        <h1>TRAVELING</h1>
+        <img src="/assets/images/logo.png" alt="LOGO" class="logo">
+    </div>
+
+    <nav class="main-nav" aria-label="Menú principal">
+        <select id="moneda">
+            <option value="#">Elige una moneda</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="COP">Peso Colombiano (COP)</option>
+        </select>
+
+        <input type="text" id="buscar" placeholder="Escribe algo...">
+        <button onclick="buscarTexto()">Buscar</button>
+
+        <div class="boton-inicio">
+            <a href="/pages/inicio-de-sesion.html" class="btn">Iniciar sesión</a>
+        </div>
+        </div>
+    </nav>
+
+    <nav class="secondary-nav" aria-label="Navegación secundaria">
+        <ul>
+            <li><a href="/pages/index.html">Inicio </a></li>
+            <li><a href="/pages/actividades.html">Actividades </a></li>
+            <li><a href="/pages/lugares.html">Lugares </a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <section1>
+        <a href="/pages/actividades.html"> </a>
+        <div class="h2">
+            <h2>Haz que tu próxima selfie sea legendaria…</h2>
+        </div>
+        <h3>¡Elige el fondo perfecto!</h3>
+
+        <div class="galeriaPubli">
+            <div class="publicidad1">
+                <img class="publiVertical" src="/assets/images/pauta1.jpeg" alt="Pauta aquí">
+                <img class="publiVertical" src="/assets/images/pauta3.jpeg" alt="Hamburguesas"><!-- pauta aquí-->
+                <img class="publiVertical" src="/assets/images/pauta2.jpg" alt="Pauta aquí">
+            </div>
+            <div class="galeriaSwiper">
+                <div class="swiper mySwiper">
+                    <section class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Cascadas</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/cascadas.jpeg"
+                                    alt="Cascadas de Pance" width="180px" height="320px">
+
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Avistamiento</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/avistamiento.jpg" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>La Ermita</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/la_Ermita.jpg" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Cristo Rey</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/self_cristo.png" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Estadio</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/self_estadio.png" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Monumento</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/self_resistencia.png" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Paracaidísmo</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/self_paracaidismo.png" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>El Gato</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/self_gato.png" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="iconos">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <div class="act-txt h3">
+                                    <h3>Zoológico</h3>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="selfie">
+                                <img id="self" class="responsive-self" src="/assets/images/self_zoo.png" alt=""
+                                    width="180px" height="320px">
+                            </div>
+                            <div>
+                                <a href="#" class="btn-1">Programar</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section1>
+    <section2 class="section2">
+        <a href="actividades.html"> </a>
+        <div class="h2">
+            <h2>Cada rincón es un sueño inigualable</h2>
+            <h3>¡Tu álbum de recuerdos empieza aquí!</h3>
+        </div>
+        <br>
+        <div class="lugares-container">
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Museo de arte La Tertulia</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/la-tertulia.jpg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Jardín Botánico de Cali</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/Jardin Botanico.jpg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Mirador de Belalcazar</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/belalcazar.webp" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Estadio Pascual Guerrero</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/estadio.jpg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Centro Comercial Chipichape</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/chipichape.jpg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Parque Artesanal Loma de la Cruz</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/lomacruz.jpg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Reserva Natural Nirvana</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/nirvana.jpg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+            <div class="lugares">
+                <div class="iconos">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div class="act-txt h3">
+                        <h3>Plazoleta Jairo Varela</h3>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <img id="lugar" src="/assets/images/plazoleta-varela.jpeg" alt="">
+                <div>
+                    <a href="#" class="btn-2">Programar</a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section2>
+    <br>
+    <section3>
+        <br>
+        <br>
+        <br>
+        <h2>"La fiesta no se cuenta…</h2>
+        <h3>¡Así se vive la rumba en Cali!</h3>
+        <div class="act-mapa">
+
+            <div class="lugares-container-video">
+                <div class="video-cont">
+                    <div class="iconos">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <div class="act-txt h3">
+                            <h3>Calle de la Salsa</h3>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="video">
+                        <iframe id="vid" width="340" height="285"
+                            src="https://www.youtube.com/embed/wxQyvP9WUXU?si=BV7LOz1RPogwmflf"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <a href="#" class="btn-2">PROGRAMAR</a>
+                    </div>
+                </div>
+                <div class="video-cont">
+                    <div class="iconos">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <div class="act-txt h3">
+                            <h3>Petronio Álvarez</h3>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="video">
+                        <iframe id="vid" width="340" height="285"
+                            src="https://www.youtube.com/embed/r-zFLdmGSqs?si=oGWw2b5x4O54ATjr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <a href="#" class="btn-2">PROGRAMAR</a>
+                    </div>
+                </div>
+                <div class="video-cont">
+                    <div class="iconos">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <div class="act-txt h3">
+                            <h3>Delirio</h3>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="video">
+                        <iframe id="vid" width="340" height="285"
+                            src="https://www.youtube.com/embed/9QQamlO1TOw?si=pYAW7roEfwRnbnGA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- </video> -->
+                    </div>
+                    <div>
+                        <a href="#" class="btn-2">PROGRAMAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section3>
+    <section4>
+        <h2>"Tu brújula de aventuras…</h2>
+        <h3>¡Encuentra los mejores lugares aquí!</h3>
+        <div class="act-mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107085.04085435759!2d-76.57221441496922!3d3.415762181588949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0cc4bb3f1%3A0x1f0fb5e952ae6168!2sCali%2C%20Valle%20del%20Cauca!5e1!3m2!1ses!2sco!4v1740071474217!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section4>
+    <section6>
+        <div class="h2">
+            <h2>RESEÑAS</h2>
+        </div>
+        <br>
+        <div class="contenedor-reseñas">
+            <div class="caja">
+                <div>
+                    <h4>Daniel Casas</h4>
+                </div>
+                <div>
+                    <h4>Cantina la 15, Granada.</h4>
+                </div>
+                <div>
+                    <p>⭐⭐⭐⭐⭐ Excelente</p>
+                </div>
+                <div>
+                    <details>
+                        <p>Me encantó mucho todo, la comida y la atención. Desde la entrada del parqueadero recibes la
+                            bienvenida, mejor dicho, me fui feliz! Muchas gracias por la recomendación. Estaré de nuevo
+                            por acá siguiendo las sugerencias de Traveling.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div>
+                    <h4>Alexander Obando</h4>
+                </div>
+                <div>
+                    <h4>Zoológico de Cali.</h4>
+                </div>
+                <div>
+                    <p>⭐⭐⭐ Aceptable</p>
+                </div>
+                <div>
+                    <details>
+                        <p>El lugar es bonito y agradable, pero algunos animales no tienen espacio suficiente para su
+                            movilidad. La vegetación está bien cuidada, lo triste es el cautiverio de animales en un
+                            sitio muy limitado para ellos. Algunos reptiles en un metro cuadrado y las nutrias en un
+                            pozo de 2 metros de largo aproximadamente. Los demás igual.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="caja">
+                <div>
+                    <h4>Carolina Vera</h4>
+                </div>
+                <div>
+                    <h4>Tour turístico del oeste.</h4>
+                </div>
+                <div>
+                    <p>⭐⭐⭐⭐⭐ Excelente</p>
+                </div>
+                <div>
+                    <details>
+                        <p>¡Hermoso! Recorrimos varios lugares (Museo La Tertulia, La Ermita, Bulevar, Cristo Rey) en
+                            una tarde y la experiencia fue maravillosa.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section6>
+
+    <section7>
+        <div class="h2">
+            <h2>TESTIMONIOS</h2>
+        </div>
+        <br>
+        <div class="contenedor-testimonios">
+            <div class="caja">
+                <div>
+                    <h4>Camila Acosta</h4>
+                </div>
+                <div>
+                    <br>
+                    <p>Excelente página. Pude programar mis recorridos por Cali con anticipación. Quería conocer los
+                        barrios populares y terminé conociendo la problemática social que se asemeja mucho a mi país.
+                    </p>
+                </div>
+            </div>
+            <div class="caja">
+                <div>
+                    <h4>Juan Santarosa</h4>
+                </div>
+                <div>
+                    <br>
+                    <p>Me encantó esta página, ya había venido a Cali muchas veces, pero no conocía muchos sitios que
+                        estaban cerca del lugar donde me hospedo normalmente. Pude realizar muchas actividades en solo
+                        una jornada.</p>
+                </div>
+            </div>
+            <div class="caja">
+                <div>
+                    <h4>Rosa García</h4>
+                </div>
+                <div>
+                    <br>
+                    <p>Me gusta conocer sitios que más allá del turismo, representan la cultura. Así que está genial que
+                        pueda filtrar, programar o armar mi ruta cómo prefiera, pero siempre con las actividades
+                        actualizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section7>
+
+    <script src="/assets/js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/assets/js/change.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                depth: 500,
+                modifer: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0
+            }
+        })
+
+    </script>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/footer/page/nosotros.html">¿Quiénes somos?</a></li>
+                    <li><a href="/footer/page/vinculate.html">Vincula tu empresa o tus actividades aquí</a></li>
+                    <li><a href="/footer/page/pauta.html">Pauta aquí</a></li>
+                </ul>
+            </div>
+
+            <div class="legal">
+                <a href="/footer/page/declaración-privacidad.html">Declaración de privacidad</a>
+                <a href="/footer/page/politica-de-datos.html">Política de datos</a>
+            </div>
+
+            <div class="copy">
+                <p>Equipo desarrollador Traveling 2025 @Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,700 @@
+html, body{
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.header {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.main-nav {
+    background: #005bb5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.nav-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+select, input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b99609;
+}
+
+/* BOTÓN INICIO SESIÓN */
+.boton-inicio .btn {
+    background-color:#023672 ;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+/* NAV SECUNDARIO */
+.active {
+    background-color: #f0f0f0; 
+}
+.secondary-nav {
+    background: #023672;
+    padding: 35px;
+    text-align: center;
+}
+
+.secondary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-nav ul li {
+    display: inline;
+    margin: 0 15px;
+    border: 1px solid white;
+    padding: 7px 34px;
+    border-radius: 7px;
+    font-size: 23px;
+}
+.secondary-nav ul li.active {
+    display: inline;
+    margin: 0 15px;
+    border: 1px solid white;
+    padding: 7px 34px;
+    border-radius: 7px;
+    font-size: 23px;
+    background-color: white;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+.boton-inicio .btn:hover {
+    background-color: #bdcbd8;
+}
+
+body{
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 14px;
+    margin: 1%;
+    padding: 0%;
+} /* de aquí en el adelante el contenido del body */ 
+h1 {
+    color: #ffcc00;
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-size: 50px;
+    text-shadow: 3px 3px 8px black;
+    }
+h2 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(1, 0, 0.5, 1.5);
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-size: 40px;
+    margin-bottom: -30px;
+    background: none; /* Asegura que no tenga fondo */
+    background-color: transparent !important; /* Fuerza la transparencia */
+    text-align: center;
+}
+
+h3{
+    color: darkblue;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    background: none; /* Asegura que no tenga fondo */
+    background-color: transparent !important; /* Fuerza la transparencia */
+    text-align: center;
+}
+.publiVertical{
+    width:95%;
+    height: 28%; /* Dividir en 3 partes iguales */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+}
+.publicidad1{
+    display: flex;
+    width:20%;
+    padding: 5px;
+    display: flex;
+    margin-top: -50px; 
+    align-items: center;
+    justify-content: right;
+    flex-direction: column; /* Organiza los elementos en columna */
+    padding: 10px;
+}
+.galeriaPubli {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.mapaPublicidad {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.mapaP{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.publigrande{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+/* responsividad */
+@media (max-width: 768px) {
+    .galeriaPubli {
+        flex-direction: column;
+    }
+
+    .galeria {
+        width: 100%;
+        height: auto;
+    }
+
+    .publicidad1 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Imagen publicitaria (25%) */
+.galeriaSwiper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper {
+    width: 80%;
+    padding: 80px 0 50px 0;
+}
+
+.swiper-slide {
+    position: relative;
+    top: -70px; /* Lo sube 20px */
+    width: 200px;
+    height: 400px;
+    background-color: #ebc73a;
+    box-shadow: 0 0 20px #023672;
+    padding: 20px;
+    text-align: center; 
+    border-radius: 15px;
+}
+.lugares-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 20px; /* Espaciado entre los bloques */
+    align-items: center;
+    justify-content: center;
+}
+.lugares-container-video{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 20px; /* Espaciado entre los bloques */
+    align-items: center;
+    justify-content: center;
+}
+.lugares {
+    width: 250px;
+    height: 260px;
+    background-color: white;
+    box-shadow: 0 0 20px #023672;
+    padding: 20px;
+    text-align: center; 
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+.actividades {
+    width: 220px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 20px #023672;
+    padding: 20px;
+    text-align: center; 
+    border-radius: 15px;
+    align-items: center;
+}
+
+#lugar{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px; /* Lo sube 50px */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Agrega espacio debajo de la imagen */
+}
+
+#fotos-act {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px; /* Lo sube 50px */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Agrega espacio debajo de la imagen */
+}
+/* Efecto cuando pasas el mouse */
+#lugar:hover, #fotos-act:hover {
+    position: fixed; /* Fija la imagen en la pantalla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5); /* La centra y agranda */
+    z-index: 1000; /* Se pone sobre los demás elementos */
+    border: 2px solid #e4bb04; /* Borde para resaltar */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Sombra */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+}
+
+.section2 {
+    margin-top: -50px;
+    background-color: #0073e6be;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente todo el contenido */
+    padding: 25px;
+    }
+.section3 {
+    margin-top: -50px;
+    background-color: #0073e6be;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente todo el contenido */
+    padding: 25px;
+    }
+
+.section2 .iconos {
+    display: flex;
+    font-family: "Caveat";
+    position: relative;
+    top: -45px;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    gap: 0px; /* Espacio entre los elementos internos */
+    }
+
+.section2 #lugar{
+    width: 230px;
+    height: 180px;
+    position: relative;
+    top: -65px; /* Lo sube 50px */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Agrega espacio debajo de la imagen */
+    object-fit: cover;
+    }
+.section2 #lugar:hover{
+    #lugar:hover, #fotos-act:hover {
+        position: fixed; /* Fija la imagen en la pantalla */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2.5); /* La centra y agranda */
+        z-index: 1000; /* Se pone sobre los demás elementos */
+        border: 2px solid #e4bb04; /* Borde para resaltar */
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Sombra */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    }
+}
+.section2 .btn-2{
+    top: -75px; /* Lo sube 50px */
+    font-size: 20px;
+    }
+.noche {
+    margin-top: -50px;
+    background-color: #011241;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente todo el contenido */
+    padding: 25px;
+    box-shadow: 0 0 20px #ebecee;
+    }
+.section2,.noche h2 {
+    color: #ffcc00;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: -35px; /* Agrega espacio entre el título y los bloques */
+
+}
+.section2 h3 {
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; /* Agrega espacio entre el título y los bloques */
+}
+.noche h3 {
+    color: rgb(246, 246, 248);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; /* Agrega espacio entre el título y los bloques */
+}
+
+.iconos{
+    display: flex;
+    font-family: "Caveat";
+    position: relative;
+    top: -30px;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    gap: 0px; /* Espacio entre los elementos internos */
+}
+
+.iconos i{
+    font-size: 40px;
+    color: #0073e6;
+}
+.logo {
+    width: 80px;
+}
+.selfie {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Asegura que esté alineada */
+    margin-top: -30px; /* Ajusta la posición hacia arriba */
+}
+
+#self {
+    object-fit: cover;
+    position: relative;
+    top: -15px; /* Lo sube 20px */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Agrega espacio debajo de la imagen */
+}
+.video-cont {
+    width: 370px;
+    height: 370px;
+    background-color: white;
+    box-shadow: 0 0 20px #023672;
+    padding: 20px;
+    text-align: center; 
+    justify-content: center;
+    border-radius: 15px;
+}
+.video {
+    position: relative;
+    top: -5px; /* Lo sube 20px */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Agrega espacio debajo de la imagen */
+}
+#vid {
+    position: relative;
+    top: -40px; /* Lo sube 20px */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Agrega espacio debajo de la imagen */
+}
+.act-txt h3 {
+    font-size: 25px;
+    color: #023672;
+     display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: flex-start;  /* Alinea el contenido en la parte superior */
+    padding-top: 5px;  /* Baja el `h3` 10px desde arriba */
+}
+.perfil {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%; 
+}
+.act-mapa {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+.btn-1 {
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente el contenido dentro del botón */
+    align-items: center; /* Centra verticalmente el contenido dentro del botón */
+    margin: 0 auto; /* Centra horizontalmente el botón dentro del div */
+    width: 50%;
+    height: 30px; /* Ajusté la altura para mayor claridad */
+    position: relative;
+    top: -15px; /* Ajusta la posición vertical */
+    font-family: "Caveat", sans-serif;
+    text-align: center;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-2 {
+    display: flex; 
+    justify-content: center; /* Centra horizontalmente el contenido dentro del botón */
+    align-items: center; /* Centra verticalmente el contenido dentro del botón */
+    margin: 0 auto; /* Centra horizontalmente el botón dentro del div */
+    width: 50%;
+    height: 30px; /* Ajusté la altura para mayor claridad */
+    position: relative;
+    top: -55px; /* Ajusta la posición vertical */
+    font-family: "Caveat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-color: #b99609;
+    border: 2px;
+}
+.contenedor-actividades {
+    display: flex;
+    flex-wrap: wrap; /* Permite que pasen a la siguiente línea si no caben */
+    align-items: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los bloques */
+}
+.actividades {
+    object-fit: cover;
+    width: 220px; /* Tamaño fijo para evitar cambios con el texto */
+    padding: 5px;
+    border: 2px solid #023672;
+    border-radius: 10px;
+    background-color: white;
+    color: #023672;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 3px rgba(255, 230, 3, 0.781); /* Sombra amarilla externa */
+}
+/* Contenedor de la imagen en su tamaño inicial */
+.fotos-act {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Estilos para la imagen ampliada */
+.imagen-grande {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px; 
+    height: auto; 
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.contenedor-reseñas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene altura definida */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+.contenedor-testimonios {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene altura definida */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+.caja {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px; /* Ancho fijo para las tarjetas */
+    text-align: center; /* Centra el contenido dentro de las tarjetas */
+}
+
+.caja h4 {
+    margin-top: 0;
+}
+
+.caja p {
+    margin: 10px 0;
+}
+
+.caja details {
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #003366; /* Cambia el color al pasar el mouse */
+}
+
+.filtros {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #ffcc00;
+    color: darkblue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.filter-btn:hover {
+    background-color: #003366;
+    color: white;
+}
+
+.reseña-contenedor {
+    background-color: white;
+    color: black;
+    border: 2px solid #003366;
+    padding: 15px;
+    border-radius: 5px;
+    height: auto; /* Permite que se ajuste al contenido */
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+   }
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 25px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.submit-btn {
+    background: #ffcc00;
+    color: darkblue;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: gold;
+}
+       /* FOOTER */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a, .legal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover, .legal a:hover {
+    text-decoration: underline;
+}
